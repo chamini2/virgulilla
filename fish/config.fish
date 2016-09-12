@@ -1,5 +1,5 @@
 # Fish stuff
-set -x fish_greeting OMG, it\'s 🐟 !
+set -x fish_greeting "OMG, it\'s 🐟 !"
 
 # Path stuff
 set -gx fish_config_path $HOME/.config/fish
