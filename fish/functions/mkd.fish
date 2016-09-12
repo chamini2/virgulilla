@@ -1,4 +1,4 @@
 function mkd -d "mkdir and cd into it"
-  mkdir $argv
-  cd $argv
+  mkdir -p $argv
+    and cd $argv
 end
