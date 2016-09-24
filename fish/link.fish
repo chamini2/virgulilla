@@ -8,5 +8,5 @@ if not functions --query fisher
   curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
 end
 
-# to install plugins in fishfile
+# install plugins in fishfile
 fisher
