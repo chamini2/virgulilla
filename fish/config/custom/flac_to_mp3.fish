@@ -4,7 +4,7 @@ function flac_to_mp3 -d "convert flac files to mp3 (320 kbps) files"
       # if it's a flac file
       set MP3 (string replace flac mp3 $song)
       for tag in ARTIST TITLE ALBUM GENRE TRACKNUMBER DATE
-        set $tag (metaflac $song --show-tag=$tag | string replace "$tag=" "")
+        set $tag (metaflac $song --show-tag=$tag | string replace -i "$tag=" "")
       end
 
       # default values
