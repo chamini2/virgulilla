@@ -4,3 +4,5 @@ if not test $NVM_BIN
   node -v > /dev/null
   node -v
 end
+
+set fish_function_path $fish_config_path/custom $fish_function_path
