@@ -1,9 +1,6 @@
 # git
 alias git 'hub'
 
-# move items to the trash rather than deleting them, `npm i -g trash`
-alias rm 'trash'
-
 # Intuitive map function
 # For example, to list all directories that contain a certain file:
 # find . -name .gitattributes | map dirname
