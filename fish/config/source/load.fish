@@ -1,5 +1,6 @@
 # load node from nvm
 if not test $NVM_BIN
+   and type -q node
   echo -n "Loading node "
   node -v > /dev/null
   node -v
