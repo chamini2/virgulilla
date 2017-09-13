@@ -11,8 +11,6 @@ alias timer 'echo "Timer started. Stop with Ctrl-D."; and date; and time cat; an
 
 # Copy to clipboard
 alias c 'pbcopy'
-# Trim new lines first
-alias cn 'tr -d '\n' | pbcopy'
 
 # IP addresses
 alias remoteip 'dig +short myip.opendns.com @resolver1.opendns.com'
