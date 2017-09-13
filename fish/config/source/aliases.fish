@@ -15,7 +15,7 @@ alias c 'pbcopy'
 alias cn 'tr -d '\n' | pbcopy'
 
 # IP addresses
-alias ip 'dig +short myip.opendns.com @resolver1.opendns.com'
+alias remoteip 'dig +short myip.opendns.com @resolver1.opendns.com'
 alias localip 'ipconfig getifaddr en0'
 
 # HTTP methods
