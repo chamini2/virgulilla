@@ -31,5 +31,5 @@ alias reload "exec $SHELL -l"
 alias ds_store_cleanup 'find . -type f -name "*.DS_Store" -ls -delete'
 
 # Hide/show all desktop icons (useful when presenting)
-alias hidedesktop='defaults write com.apple.finder CreateDesktop -bool false; and killall Finder'
-alias showdesktop='defaults write com.apple.finder CreateDesktop -bool true; and killall Finder'
+alias hidedesktop 'defaults write com.apple.finder CreateDesktop -bool false; and killall Finder'
+alias showdesktop 'defaults write com.apple.finder CreateDesktop -bool true; and killall Finder'
