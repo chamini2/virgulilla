@@ -1,11 +1,3 @@
-# load node from nvm
-if not test $NVM_BIN
-   and type -q node
-  echo -n "Loading node "
-  node -v > /dev/null
-  node -v
-end
-
 # load the default ruby to use with rvm
 if type -q rvm
   echo -n "Loading rvm "
