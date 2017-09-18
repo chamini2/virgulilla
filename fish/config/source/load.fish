@@ -6,5 +6,3 @@ if type -q rvm
 end
 
 [ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
-
-set fish_function_path $fish_config_path/custom $fish_function_path
