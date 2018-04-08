@@ -1,5 +1,8 @@
+# Restart fish_user_paths
+set -U fish_user_paths
+
 ## Homebrew
-set -U fish_user_paths /usr/local/bin/ $fish_user_paths
+set -U fish_user_paths /usr/local/bin $fish_user_paths
 
 ## Cabal and sandboxes
 set -U fish_user_paths $HOME/.cabal/bin .cabal-sandbox/bin $fish_user_paths
