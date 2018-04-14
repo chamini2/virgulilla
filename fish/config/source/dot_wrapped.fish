@@ -1,3 +1,3 @@
-command -sq open ;and dot_wrapper open
-command -sq code ;and dot_wrapper code
-command -sq atom ;and dot_wrapper atom
+command -sq open ;and default_arguments_for_command open
+command -sq code ;and default_arguments_for_command code
+command -sq atom ;and default_arguments_for_command atom
