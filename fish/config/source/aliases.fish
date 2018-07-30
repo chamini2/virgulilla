@@ -1,5 +1,7 @@
 # git
-alias git 'hub'
+if command -sq hub
+    alias git 'hub'
+end
 
 # Intuitive map function
 # For example, to list all directories that contain a certain file:
@@ -25,7 +27,7 @@ end
 alias afk '/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 
 # Reload the shell (i.e. invoke as a login shell)
-alias reload "exec $SHELL -l"
+alias reload "exec $__fish_bin_dir/fish -l"
 
 # Recursively delete `.DS_Store` files
 alias ds_store_cleanup 'find . -type f -name "*.DS_Store" -ls -delete'
