@@ -11,3 +11,6 @@ set -U fish_user_paths $HOME/.local/bin $fish_user_paths
 
 ## npm
 set -U fish_user_paths node_modules/.bin $fish_user_paths
+
+## Kubectl
+set -Ux KUBECONFIG kubeconfig
