@@ -4,5 +4,3 @@ if type -q rvm
   rvm use default > /dev/null 2> /dev/null
   rvm current
 end
-
-[ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
