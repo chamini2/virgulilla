@@ -1,4 +1,4 @@
-# Restart fish_user_paths
+# Reset fish_user_paths
 set -U fish_user_paths
 
 ## Homebrew
