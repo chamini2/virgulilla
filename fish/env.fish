@@ -1,16 +1,29 @@
 # Reset fish_user_paths
 set -U fish_user_paths
 
+function add_if_dir
+    if test -d $argv[1]
+        set -U fish_user_paths $argv[1] $fish_user_paths
+    end
+end
+
+## Home
+add_if_dir $HOME/bin
+
 ## Homebrew
-set -U fish_user_paths /usr/local/sbin /usr/local/bin $fish_user_paths
+add_if_dir /usr/local/sbin
+add_if_dir /usr/local/bin
 
 ## Cabal and sandboxes
-set -U fish_user_paths $HOME/.cabal/bin .cabal-sandbox/bin $fish_user_paths
+add_if_dir $HOME/.cabal/bin
+add_if_dir .cabal-sandbox/bin
 ## Stack
-set -U fish_user_paths $HOME/.local/bin $fish_user_paths
+add_if_dir $HOME/.local/bin
 
 ## npm
-set -U fish_user_paths node_modules/.bin $fish_user_paths
+add_if_dir node_modules/.bin
 
 ## Kubectl
 set -Ux KUBECONFIG kubeconfig
+
+functions -e add_if_dir
