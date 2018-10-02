@@ -1,6 +1,6 @@
-function kubebash
+function kubelogs
     set -l PODNAME (kubegetpod $argv)
     if test -n "$PODNAME"
-        kubectl exec -it $PODNAME -- bash
+        kubectl logs -f $PODNAME
     end
 end
