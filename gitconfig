@@ -20,7 +20,7 @@
     bd = branch -D
 
     # Update branches information with remote deleting ones deleted in the remote
-    prune = remote update --prune
+    update-prune = remote update --prune
 
     # Show the diff between the latest commit and the current state
     d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
