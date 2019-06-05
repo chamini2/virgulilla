@@ -3,6 +3,9 @@ if command -sq hub
     alias git 'hub'
 end
 
+# dotfiles management
+alias config 'git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
 # stopwatch
 alias timer 'echo "Timer started. Stop with Ctrl-D."; and date; and time cat; and date'
 
