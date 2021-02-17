@@ -3,6 +3,7 @@
 	l = log -n 20 --pretty=format:"%C(yellow)%h\\ %Cgreen[%ai]%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --graph --abbrev-commit
 	ll = log --pretty=format:"%C(yellow)%h\\ %Cgreen[%ai]%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --stat --abbrev-commit
 	ls = log --pretty=format:"%C(yellow)%h\\ %Cgreen[%ai]%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --graph --abbrev-commit
+	lsa = log --pretty=format:"%C(yellow)%h\\ %Cgreen[%ai]%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --graph --abbrev-commit --all
 
 	# View the current working tree status using the short format
 	s = status -s
@@ -16,7 +17,8 @@
 	co = checkout
 
 	# Delete branches by force
-	bd = branch -D
+	bdf = branch -D
+	bd = branch -d
 
 	# Update branches information with remote deleting ones deleted in the remote
 	remote-prune = remote update --prune
@@ -160,9 +162,14 @@
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
 
+[url "ssh://git@bitbucket.org"]
+	insteadOf = https://bitbucket.org
+
 [status]
 	submoduleSummary = true
 
 [user]
 	name = Matteo Ferrando
 	email = matteo.ferrando2@gmail.com
+[http]
+	postBuffer = 524288000
