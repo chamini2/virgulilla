@@ -1,6 +1,4 @@
 function default_arguments_for_command -a command_to_call -d "Pass default arguments to commands when no cammands are passed. Ideal for editors."
-    # By default, the default arguments is the current directory
-    set -l default_arguments .
     if test (count $argv) -gt 1 > /dev/null
         set default_arguments $argv[2..-1]
     end
@@ -15,3 +13,10 @@ function default_arguments_for_command -a command_to_call -d "Pass default argum
     end
     "
 end
+
+command -sq open ;and default_arguments_for_command open .
+command -sq code ;and default_arguments_for_command code .
+command -sq atom ;and default_arguments_for_command atom .
+command -sq idea ;and default_arguments_for_command idea .
+
+functions -e default_arguments_for_command
