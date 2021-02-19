@@ -1,6 +1,3 @@
-# Fish stuff
-set -x fish_greeting "OMG, it's 🐟 !"
-
 # Path stuff
 set -g fish_config_path $HOME/.config/fish
 
