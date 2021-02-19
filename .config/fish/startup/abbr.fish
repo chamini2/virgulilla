@@ -1,12 +1,8 @@
-abbr su 'sudo su'
-abbr wow 'git status'
-abbr gcm 'git commit -m'
-abbr gap 'git add -p'
-abbr gm 'git merge'
-abbr gmn 'git merge --no-ff'
-abbr gds 'git diff --staged'
-abbr gd 'git diff'
 abbr -- - 'cd -'
-abbr gut git
-abbr ssh2ldc 'ssh chamini2@tahaddi.ldc.usb.ve'
+abbr awake caffeinate
+abbr su 'sudo su'
 abbr sl ls
+abbr gut git
+abbr wow 'git status'
+abbr gap 'git add -p'
+abbr gmn 'git merge --no-ff'

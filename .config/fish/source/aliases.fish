@@ -13,16 +13,11 @@ alias timer 'echo "Timer started. Stop with Ctrl-D."; and date; and time cat; an
 alias c 'pbcopy'
 
 # IP addresses
-alias remoteip 'dig +short myip.opendns.com @resolver1.opendns.com'
-alias localip 'ipconfig getifaddr en0'
+alias ipremote 'dig +short myip.opendns.com @resolver1.opendns.com'
+alias iplocal 'ipconfig getifaddr en0'
 
-# HTTP methods
-for method in GET HEAD POST PUT DELETE TRACE OPTIONS
-  alias $method "lwp-request -m '$method'"
-end
-
-# Lock the screen (when going AFK)
-alias afk '/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
+# Lock the screen (when going AFK) -- needs "Accessibility" permission from app running it
+alias afk "osascript -e 'tell app \"System Events\" to key code 12 using {control down, command down}'"
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload "exec $__fish_bin_dir/fish -l"
