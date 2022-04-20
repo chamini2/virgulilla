@@ -2,30 +2,33 @@
 set -U fish_user_paths
 
 ## Home
-fish_add_path $HOME/bin
+set -a fish_user_paths $HOME/bin
 
 ## Homebrew
-fish_add_path /usr/local/sbin
-fish_add_path /usr/local/bin
+set -a fish_user_paths /usr/local/sbin
+set -a fish_user_paths /usr/local/bin
 
 ## Cabal and sandboxes
-fish_add_path $HOME/.cabal/bin
-fish_add_path ./.cabal-sandbox/bin
+set -a fish_user_paths $HOME/.cabal/bin
+set -a fish_user_paths ./.cabal-sandbox/bin
 ## Stack
-fish_add_path $HOME/.local/bin
+set -a fish_user_paths $HOME/.local/bin
 
 ## npm
-fish_add_path ./node_modules/.bin
+set -a fish_user_paths ./node_modules/.bin
 
 # Python
-fish_add_path $HOME/.pyenv/bin
-fish_add_path $HOME/.poetry/bin
+set -a fish_user_paths $HOME/.pyenv/bin
+set -a fish_user_paths $HOME/.poetry/bin
+
+# Rust
+set -a fish_user_paths $HOME/.cargo/bin
 
 # Java
-fish_add_path $HOME/.jenv/bin
+set -a fish_user_paths $HOME/.jenv/bin
 
 # Go
-fish_add_path $HOME/.go/bin
+set -a fish_user_paths $HOME/.go/bin
 
 ## Kubectl
 set -Ux KUBECONFIG kubeconfig
