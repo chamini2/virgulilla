@@ -12,7 +12,8 @@ if status --is-interactive
 
   source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
 
-  and pyenv init --path | source
-  pyenv init - | source
+  if type -q pyenv
+    pyenv init - | source
+  end
 
 end
