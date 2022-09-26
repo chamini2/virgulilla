@@ -10,7 +10,10 @@ if status --is-interactive
     jenv init - > /dev/null
   end
 
-  source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
+  # TODO: should this be a one-time call?
+  if [ -f "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc" ]
+    source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
+  end
 
   if type -q pyenv
     pyenv init - | source

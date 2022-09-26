@@ -8,6 +8,3 @@ set fish_function_path $fish_config_path/custom $fish_function_path
 for file in $fish_config_path/source/*.fish
   source $file
 end
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/matteo/Downloads/google-cloud-sdk/path.fish.inc' ]; if type source > /dev/null; source '/Users/matteo/Downloads/google-cloud-sdk/path.fish.inc'; else; . '/Users/matteo/Downloads/google-cloud-sdk/path.fish.inc'; end; end
