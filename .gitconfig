@@ -16,6 +16,9 @@
 	# Checkout alias
 	co = checkout
 
+	# Switch alias
+	sw = switch
+
 	# Delete branches by force
 	bdf = branch -D
 	bd = branch -d
@@ -173,3 +176,5 @@
 	email = matteo.ferrando2@gmail.com
 [http]
 	postBuffer = 524288000
+[init]
+	defaultBranch = main
