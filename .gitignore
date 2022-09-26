@@ -1,3 +1,6 @@
+# dotfiles
+.cfg/
+
 # Compiled Python files
 *.pyc
 
