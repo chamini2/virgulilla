@@ -1,4 +1,4 @@
 function fish_greeting
-    fish_logo
+    echo -n "🐟 "
     fish --version
 end
