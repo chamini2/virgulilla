@@ -1,26 +1,22 @@
-*
-!.*
+# dotfiles gitignore
+# > To see global gitignore: ~/.config/git/ignore
 
-# dotfiles
+# Ignore all except for the dotfiles
+/*
+!/.*
+
+# Ignore dotfiles repo
 .cfg/
 
-# Compiled Python files
-*.pyc
+# macOS specific
+.Trash
 
-# Compiled Haskell files
-*.hi
+# Large apps to enable tab completion
+# apps
+/.vscode
+/.duckdb
+/.docker
 
-# Folder view configuration files
-.DS_Store
-Desktop.ini
-
-# Thumbnail cache files
-._*
-Thumbs.db
-
-# Files that might appear on external disks
-.Spotlight-V100
-.Trashes
-
-# Files or directories created by editors
-.idea
+# environment management
+/.*conda*
+/.pyenv
