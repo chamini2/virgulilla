@@ -17,18 +17,23 @@ set -a fish_user_paths $HOME/.local/bin
 ## npm
 set -a fish_user_paths ./node_modules/.bin
 
-# Python
+## Python
 set -a fish_user_paths $HOME/.pyenv/bin
 set -a fish_user_paths $HOME/.poetry/bin
 
-# Rust
+## Rust
 set -a fish_user_paths $HOME/.cargo/bin
 
-# Java
+## Java
 set -a fish_user_paths $HOME/.jenv/bin
 
-# Go
-set -a fish_user_paths $HOME/.go/bin
+## Go
+set -Ux GOPATH $HOME/.go
+set -a fish_user_paths $GOPATH/bin
 
 ## Kubectl
 set -Ux KUBECONFIG kubeconfig
+
+# Shell
+set -Ux EDITOR 'cursor --wait'
+set -Ux GIT_EDITOR 'vim'

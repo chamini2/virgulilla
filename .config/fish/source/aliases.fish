@@ -3,6 +3,11 @@ if command -sq hub
     alias git 'hub'
 end
 
+# copilot
+if command -sq gh
+    alias copilot 'gh copilot suggest -tshell'
+end
+
 # dotfiles management
 alias config 'git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
