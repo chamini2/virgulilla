@@ -5,8 +5,7 @@ set -U fish_user_paths
 set -a fish_user_paths $HOME/bin
 
 ## Homebrew
-set -a fish_user_paths /usr/local/sbin
-set -a fish_user_paths /usr/local/bin
+set -a fish_user_paths /opt/homebrew/bin
 
 ## Cabal and sandboxes
 set -a fish_user_paths $HOME/.cabal/bin

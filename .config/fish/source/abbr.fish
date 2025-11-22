@@ -6,7 +6,8 @@ abbr -a -- su 'sudo su'
 abbr -a -- wow 'git status'
 abbr -a -- tf 'terraform'
 abbr -a -- kc 'kubectl'
-abbr -a -- ks 'koldstart'
+abbr -a -- bn 'bop node'
+abbr -a -- bj 'bop jobs'
 
 # misspellings
 abbr -a -- gut git

@@ -9,7 +9,9 @@ for file in $fish_config_path/source/*.fish
   source $file
 end
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-eval /Users/matteo/.miniconda3/bin/conda "shell.fish" "hook" $argv | source
-# <<< conda initialize <<<
+# Added by OrbStack: command-line tools and integration
+# This won't be added again if you remove it.
+source ~/.orbstack/shell/init.fish 2>/dev/null || :
+
+# Added by Antigravity
+fish_add_path /Users/matteo/.antigravity/antigravity/bin
