@@ -36,3 +36,6 @@ set -Ux KUBECONFIG kubeconfig
 # Shell
 set -Ux EDITOR 'cursor --wait'
 set -Ux GIT_EDITOR 'vim'
+
+# Fisher
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher

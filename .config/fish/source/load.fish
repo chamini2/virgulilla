@@ -23,10 +23,12 @@ end
 
 # Python env management
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-eval /Users/matteo/.miniconda3/bin/conda "shell.fish" "hook" $argv | source
-# <<< conda initialize <<<
+if test -d /Users/matteo/.miniconda3
+  # >>> conda initialize >>>
+  # !! Contents within this block are managed by 'conda init' !!
+  eval /Users/matteo/.miniconda3/bin/conda "shell.fish" "hook" $argv | source
+  # <<< conda initialize <<<
+end
 
 if type -q pyenv
   pyenv init - | source
