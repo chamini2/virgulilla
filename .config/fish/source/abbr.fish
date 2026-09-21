@@ -9,6 +9,9 @@ abbr -a -- kc 'kubectl'
 abbr -a -- bn 'bop node'
 abbr -a -- bj 'bop jobs'
 
+# fal
+abbr -a -- utest 'uv run --extra test pytest -svv'
+
 # misspellings
 abbr -a -- gut git
 abbr -a -- sl ls

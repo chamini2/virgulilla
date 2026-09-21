@@ -18,3 +18,5 @@ Thumbs.db
 
 # Files or directories created by editors
 .idea
+
+**/.claude/settings.local.json
